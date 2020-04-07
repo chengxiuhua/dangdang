@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新用户注册页面</title>
+    <link rel="stylesheet" href="../css/registry.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_img">
+            <img src="../img/logo.gif" alt="">
+        </div>
+    </div>
+
+    <div class="shandow_content">
+        <div class="content">
+            <div class="box_form">
+                <h3>新用户注册</h3>
+                <form action="http://localhost/dangdang/php/registry.php" method="POST">
+                    <p class="user">
+                        <label for="">用户姓名</label>
+                        <input type="text" name="username" placeholder="请输入您的用户名"><span></span>
+                        <strong style="display: block;">用户名可由数字/下划线/数字组成，首字符为字母</strong>
+                    </p>
+                    <p class="pass">
+                        <label for="">用户密码</label>
+                        <input type="password" name="password"><span></span>
+                        <strong></strong>
+                    </p>
+                    <p class="repass">
+                        <label for="">确认密码</label>
+                        <input type="password" name="repass"><span></span>
+                        <strong></strong>
+                    </p>
+                    <p class="email">
+                        <label for="">用户邮箱</label>
+                        <input type="text" name="email"><span></span>
+                        <strong></strong>
+                    </p>
+                    <p id="f_submit">
+                        <input type="submit" name="submit" value="立即注册">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../script/registry.js"></script>
+
+
+</body>
+
+</html>

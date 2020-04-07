@@ -1,0 +1,43 @@
+@charset "UTF-8";
+//设置中文字符编码
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dd,dt,figure,figcaption,fieldset,legend{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight: normal;
+}
+html{
+    color:#666;
+}
+body{
+    font-size: 16px;
+}
+ol,ul,li{
+    list-style: none;
+}
+b,strong{
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color:#666;
+}
+img{
+    display: block;
+}
+input{
+    outline:none;
+}
+.clear_fix::after{
+    content:"\20";
+    display: block;
+    clear:both;
+    height:0;
+    visibility: hidden;
+}

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+//设置中文字符编码
+
+//引入重置文件
+@import "reset";
+
+//引入网页头部文件
+@import "header";
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top:30px;
+    min-height: 1000px;
+
+    button{
+        margin-bottom: 30px;
+        width: 80px;
+        height: 25px;
+        background-color: #f5f5f5;
+        cursor: pointer;
+        color:#555;
+        font-weight: bold;
+        margin-right: 5px;
+        border:0;
+    }
+    .h_red{
+        color:#fd5115;
+    }
+    /* 渲染 */
+    .list {
+        width: 1160px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .list li {
+        width: 200px;
+        padding: 10px;
+        float: left;
+        margin: 0 10px 10px 0;
+        border: 1px solid #ccc;
+        height: 310px;
+        position: relative;
+    }
+
+    .list li p {
+        width: 200px;
+        height: 48px;
+        line-height: 24px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+    .list li img {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    .list li span {
+        display: block;
+        float: left;
+        margin-top: 15px;
+    }
+    .list li i {
+        display: block;
+        float: right;
+        margin-top: 15px;
+    }
+
+    /* 分页 */
+    .page {
+        clear: both;
+        width: 1170px;
+        margin: 0 auto;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .m-style {
+        margin-top: 30px;
+        float: right;
+        clear: both;
+        text-align: center;
+    }
+
+    .m-style:before,
+    .m-style:after {
+        content: "";
+        display: table;
+    }
+
+    .m-style:after {
+        clear: both;
+        overflow: hidden;
+    }
+
+    .m-style span {
+        float: left;
+        margin: 0 5px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        color: #bdbdbd;
+        font-size: 14px;
+    }
+
+    .m-style .active {
+        float: left;
+        margin: 0 5px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        background: #e91e63;
+        color: #fff;
+        font-size: 14px;
+        border: 1px solid #e91e63;
+    }
+
+    .m-style a {
+        float: left;
+        margin: 0 5px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        background: #fff;
+        border: 1px solid #ebebeb;
+        color: #bdbdbd;
+        font-size: 14px;
+    }
+
+    .m-style a:hover {
+        color: #fff;
+        background: #e91e63;
+    }
+
+    .m-style .next,
+    .m-style .prev {
+        font-family: "Simsun";
+        font-size: 16px;
+        font-weight: bold;
+        width: 38px;
+    }
+
+    .now,
+    .count {
+        padding: 0 5px;
+        color: #f00;
+    }
+
+    .eg img {
+        max-width: 800px;
+        min-height: 500px;
+    }
+
+    input {
+        float: left;
+        margin: 0 5px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #ebebeb;
+        outline: none;
+        color: #bdbdbd;
+        font-size: 14px;
+    }
+}
+
+//引入底部文件
+@import "footer";

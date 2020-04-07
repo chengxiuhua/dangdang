@@ -1,0 +1,114 @@
+@charset "UTF-8";
+//设置中文字符编码
+
+//引入重置文件
+@import "reset";
+body {
+    background-color: #f6f9fb;
+}
+.header {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 2px;
+    height: 71px;
+    color: #404040;
+    background: #fff;
+    border-bottom: 3px solid #f07700;
+    .header_img {
+        float: left;
+        display: block;
+        width: 172px;
+        height: 71px;
+        overflow: hidden;
+    }
+}
+.shandow_content {
+    background-color: #ebeeef;
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+.content {
+    background: #fff;
+    position: relative;
+    top: -10px;
+    right: -10px;
+    width: 950px;
+    font-family: "Microsoft YaHei";
+    box-shadow: -1px 1px 1px rgb(232, 235, 236);
+}
+.box_form {
+    width: 960px;
+    padding: 45px 0 25px;
+    position: relative;
+    h3 {
+        width: 902px;
+        height: 46px;
+        background-color: #fff;
+        left: 20px;
+        border-bottom: 1px solid #eceef2;
+        font-size: 16px;
+        line-height: 42px;
+        text-align: left;
+        color: #464646;
+        margin-left: 6px;
+        padding-left: 40px;
+    }
+    form {
+        padding: 45px 0 25px;
+        position: relative;
+        p {
+            height: 68px;
+            margin: 0 100px;
+            position: relative;
+            label {
+                font-size: 14px;
+                width: 338px;
+                padding-right: 10px;
+                text-align: right;
+                vertical-align: top;
+                color: #646464;
+                padding-top: 8px;
+                font-family: "Microsoft YaHei";
+            }
+            input {
+                width: 290px;
+                height: 18px;
+            }
+            span{
+                font-size: 12px;
+                margin-left: 30px;
+            }
+            strong {
+                display: block;
+                line-height: 14px;
+                padding: 0 70px;
+                margin-right: 5px;
+                position: absolute;
+                left: 8px;
+                bottom: 18px;
+                color: #787878;
+                font-size: 12px;
+            }
+        }
+        #f_submit {
+            width: 178px;
+            height: 44px;
+            line-height: 44px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #ff2832;
+            border-radius: 22px;
+            margin-left: 170px;
+            input{
+                width: 150px;
+                border: 0;
+                background-color: #ff2832;
+                height: 35px;
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+}

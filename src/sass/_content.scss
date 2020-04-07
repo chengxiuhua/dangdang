@@ -1,0 +1,329 @@
+@charset "UTF-8";
+//设置中文字符编码
+
+#wrap-content {
+    width: 100%;
+    height: 800px; //最终要自适应
+    // border: 1px solid #333;
+}
+
+.content {
+    height: 800px;
+    margin: 0 auto;
+    // border: 1px solid orange;
+    width: 1200px;
+    background-color: #fff;
+}
+/* 1.第一部分 */
+.content .new_pro {
+    padding-bottom: 20px;
+    height: 508px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /* 1.1左侧二级菜单 */
+    .left_nav_box {
+        float: left;
+        width: 200px;
+        background-color: #fafafa;
+
+        padding: 4px 0;
+        height: 488px;
+        ul {
+            width: 200px;
+            li {
+                height: 30px;
+                padding-left: 18px;
+                color: #323232;
+                font: 14px/30px "Microsoft Yahei";
+                position: relative;
+                vertical-align: top;
+                cursor: pointer;
+                
+            }
+            .li_border{
+                border:2px solid #ff2832;
+                border-right: 0;
+            }
+        }
+        .nav_content{
+            float: left;
+            min-height: 484px;
+            display: none;
+            .nav_content_li {
+                display: none;
+                position: absolute;
+                z-index: 5;
+                left: 199px;
+                top: 0px;
+                border: 2px solid #ff2832;
+                width: 979px;
+                padding-left: 18px;
+                overflow: hidden;
+                background-color: #fff;
+                border-top: none 0;
+                min-height: 484px;
+                a {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: purple;
+                }
+            }
+
+        }
+        
+    }
+    /* 1.2轮播 */
+    .main_lunbo {
+        float: left;
+        width: 796px;
+        overflow: hidden;
+        border-bottom: 1px solid #e6e6e6;
+        border-right: 1px solid #eaecee;
+        .lunbo {
+            width: 796px;
+            height: 326px;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 1px solid #e6e6e6;
+            z-index: 3;
+            .btn {
+                position: absolute;
+                width: 33px;
+                height: 70px;
+                overflow: hidden;
+                background-image: url(../img/content.png);
+                background-repeat: no-repeat;
+                background-color: #000;
+                top: 122px;
+                line-height: 99px;
+                z-index: 4;
+                cursor: pointer;
+                opacity: 0.2;
+                filter: alpha(opacity=20);
+                
+            }
+            .btn_left {
+                background-position: 0 -70px;
+                left: -35px;
+            }
+            .btn_right {
+                background-position: -33px -70px;
+                right: -35px;
+            }
+            .lunbo_img {
+                li {
+                    position: absolute;
+                    z-index: 3;
+                    height: 326px;
+                    overflow: hidden;
+                    opacity: 0;
+                }
+                .show {
+                    opacity: 1;
+                }
+            }
+            .lunbo_roll {
+                position: absolute;
+                left: 50%;
+                margin-left: -100px;
+                bottom: 7px;
+                z-index: 3;
+                li {
+                    float: left;
+                    width: 20px;
+                    height: 20px;
+                    font: 12px/20px Arial;
+                    color: #fff;
+                    text-align: center;
+                    overflow: hidden;
+                    cursor: pointer;
+                    background-color: #646464;
+                    margin-right: 6px;
+                    border-radius: 10px;
+                }
+                .on {
+                    background-color: #ff2832;
+                }
+            }
+        }
+        .tehui {
+            width: 796px;
+            height: 160px;
+            overflow: hidden;
+            position: relative;
+            ul {
+                width: 1200px;
+                position: absolute;
+                overflow: hidden;
+                margin-left: 10px;
+                left: 0;
+                top: 0;
+                opacity: 1;
+                li {
+                    width: 198px;
+                    height: 160px;
+                    overflow: hidden;
+                    float: left;
+                    border-right: 1px solid #e6e6e6;
+                }
+            }
+        }
+    }
+    /* 1.3右侧注意 */
+    .main_notice {
+        float: left;
+        width: 202px;
+        border-bottom: 1px solid #e6e6e6;
+        border-right: 1px solid #e6e6e6;
+        .notice_pic {
+            height: 194px;
+            width: 202px;
+            border-top: 1px solid #e6e6e6;
+            cursor: pointer;
+            img {
+                display: block;
+                width: 202px;
+                height: 195px;
+            }
+        }
+        .notice_tab {
+            width: 202px;
+            overflow: hidden;
+            .tab_list {
+                border-top: 1px solid #e6e6e6;
+                height: 29px;
+                overflow: hidden;
+                width: 204px;
+                cursor: pointer;
+                li {
+                    margin-left: -1px;
+                    float: left;
+                    width: 101px;
+                    border: 1px solid #e6e6e6;
+                    border-top: 0;
+                    height: 28px;
+                    background-color: #f0f0f0;
+                    cursor: default;
+                    font: 14px/29px "Microsoft Yahei";
+                    text-align: center;
+                    color: #646464;
+                    overflow: hidden;
+                }
+                .on {
+                    background-color: #fff;
+                    border-bottom: 0;
+                    padding-bottom: 1px;
+                }
+            }
+            .neirong {
+                width: 202px;
+                height: 142px;
+                position: relative;
+                border-bottom: 1px solid #e6e6e6;
+                overflow: hidden;
+                .nr {
+                    height: 130px;
+                    width: 202px;
+                    overflow: hidden;
+                    padding-top: 6px;
+                    display: none;
+                    li {
+                        line-height: 25px;
+                        padding-left: 20px;
+                        width: 183px;
+                        height: 25px;
+                        background: url(../img/content.png) no-repeat 10px -188px;
+                        color: #646464;
+                        font-size: 12px;
+                        overflow: hidden;
+                    }
+                    .red {
+                        color: #ff2832;
+                    }
+                }
+                .active {
+                    display: block;
+                }
+            }
+        }
+        .notice_roll {
+            width: 202px;
+            height: 119px;
+            position: relative;
+            overflow: hidden;
+            .notice_roll_arrow {
+                position: absolute;
+                top: 41px;
+                width: 30px;
+                height: 43px;
+                overflow: hidden;
+                line-height: 90px;
+                font-size: 0;
+                background-image: url(../img/content.png);
+                background-repeat: no-repeat;
+                background-color: #000;
+                cursor: pointer;
+                opacity: 0.2;
+            }
+            .arrow_l {
+                background-position: 0 -83px;
+                left: -35px;
+                z-index: 2;
+            }
+            .arrow_r {
+                background-position: -36px -83px;
+                right: -35px;
+                z-index: 2;
+            }
+            .notice_roll_lunbo {
+                position: absolute;
+                width: 999px;
+                height: 119px;
+                // overflow: hidden;
+                top: 0;
+                left: 0px;
+                li {
+                    float: left;
+                    width: 202px;
+                    height: 119px;
+                }
+            }
+            ol {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                text-align: center;
+                margin-left: -18px;
+                li {
+                    float: left;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 8px;
+                    background: #c8c8c8;
+                    overflow: hidden;
+                    font-size: 0;
+                    line-height: 24px;
+                    margin: 0 6px 0 0;
+                }
+                .red {
+                    background: #ff2832;
+                }
+            }
+        }
+    }
+}
+/* 2.第二部分 */
+.content .top_float {
+    position: fixed;
+    left: 0px;
+    top: -52px;
+    width: 100%;
+    height: 52px;
+    background-color: rgba(229, 27, 41, 0.9);
+    .sub_float {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 8px;
+    }
+}

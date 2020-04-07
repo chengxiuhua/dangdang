@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车页面</title>
+    <link rel="stylesheet" href="../css/shopcart.css">
+</head>
+
+<body>
+    <ul class="shopping_title" id="j_carttitle">
+        <li class="f1"><input class="allsel" type="checkbox" checked>全选</li>
+        <li class="f2">商品信息</li>
+        <li class="f3">单价（元）</li>
+        <li class="f4">数量</li>
+        <li class="f4">金额（元）</li>
+        <li class="f5">操作</li>
+    </ul>
+    <div id="item_list">
+        <div class="shopping_list" style="display: none;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr class="bb_none tree_line ">
+                        <td class="row1">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td class="row_img">
+                            <img src="http://img3m3.ddimg.cn/85/20/1528884013-2_u_1.jpg" alt="">
+                        </td>
+                        <td class="row_name">
+                            <p>美素力婴儿配方奶粉1段罐装900g</p>
+                        </td>
+                        <td class="row3">
+                            <span>¥299.00</span>
+                        </td>
+                        <td data-minbuy="0" class="fn-count-tip">
+                            <span class="amount">
+                                <a class="reduce" href="javascript:;">-</a>
+                                <input value="1" type="text">
+                                <a class="add" href="javascript:;">+</a>
+                            </span>
+                        </td>
+                        <td class="row4">
+                            <span>¥299.00</span>
+                        </td>
+                        <td class="row5 ">
+                            <a href="javascript:;">
+                                删除
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="shopping_total" id="J_totalMoneyBlock">
+        <div class="shopping_total_right">
+            <div class="subtotal">
+                <p>
+                    <span class="cartsum">总计(不含运费)：</span>
+                    <span id="payAmount" class="price">¥0.00</span>
+                </p>
+            </div>
+        </div>
+        <div class="shopping_total_left" id="J_leftBar">
+            <input class="allsel" type="checkbox" checked> 全选
+            <a href="javascript:;">批量删除</a>
+            <span>已选择<i>0</i>件商品</span>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../script/jscookie.js"></script>
+    <script src="../script/shopcart.js"></script>
+</body>
+
+</html>

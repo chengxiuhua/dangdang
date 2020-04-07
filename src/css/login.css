@@ -1,0 +1,144 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl, dd, dt, figure, figcaption, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+html {
+  color: #666;
+}
+
+body {
+  font-size: 16px;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+i, em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  display: block;
+}
+
+input {
+  outline: none;
+}
+
+.clear_fix::after {
+  content: "\20";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.head {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 14px;
+}
+.head img {
+  float: left;
+  margin: 7px 0 0 0;
+}
+
+.content {
+  background: url(../img/login.jpg) no-repeat center center;
+  height: 590px;
+}
+.content fieldset {
+  background: #fff;
+  padding: 15px 25px 15px 15px;
+  float: right;
+  width: 320px;
+  color: #6e6e6e;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-right: 50px;
+  border: 1px solid #eef2f4;
+  box-shadow: 0px 1px 2px #eee;
+}
+.content fieldset .mimalogin {
+  font-size: 18px;
+  color: #3c3c3c;
+  margin-top: 5px;
+}
+.content fieldset input {
+  width: 270px;
+}
+.content fieldset .user,
+.content fieldset .pass {
+  margin-top: 20px;
+  height: 36px;
+  border: 1px solid #e6e6e6;
+  width: 310px;
+  border-radius: 2px;
+}
+.content fieldset .user span,
+.content fieldset .pass span {
+  width: 30px;
+  margin-right: 10px;
+  height: 36px;
+  float: left;
+  background: url(../img/icon.png) 10px -110px no-repeat;
+}
+.content fieldset .user input,
+.content fieldset .pass input {
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  border: 0;
+  color: #333;
+  font-family: "Microsoft Yahei";
+  padding: 0;
+}
+.content fieldset strong {
+  width: 220px;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  font-size: 12px;
+  color: #787878;
+  margin-left: 35px;
+}
+.content fieldset .pass span {
+  background: url(../img/icon.png) 10px -150px no-repeat;
+}
+.content fieldset .login {
+  margin-top: 20px;
+  width: 311px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  height: 44px;
+  text-align: center;
+  background: #ff2832;
+}
+.content fieldset .login input {
+  background: #ff2832;
+  border: 0;
+  color: #fff;
+  font: normal 20px/44px "Microsoft Yahei";
+  height: 42px;
+}
+
+/*# sourceMappingURL=login.css.map */

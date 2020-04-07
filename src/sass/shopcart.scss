@@ -1,0 +1,194 @@
+@charset "UTF-8";
+//设置中文字符编码
+
+//引入重置文件
+@import "reset";
+
+.shopping_title {
+    width: 960px;
+    height: 36px;
+    line-height: 36px;
+    
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: pink;
+
+    font-size: 12px;
+    li {
+        float: left;
+    }
+    .f1 {
+        width: 202px;
+    }
+    .f2 {
+        width: 280px;
+    }
+    .f3 {
+        width: 130px;
+    }
+    .f4 {
+        width: 130px;
+    }
+    .f5 {
+        width: 70px;
+    }
+}
+#item_list{
+    width: 100%;
+}
+.shopping_list {
+    width: 960px;
+    border: 1px solid #ebebeb;
+    margin: 0 auto;
+    td {
+        vertical-align: top;
+        padding-top: 15px;
+        position: relative;
+        line-height: 22px;
+        text-align: center;
+    }
+    .row1 {
+        padding: 0 0 0 10px;
+        width: 42px;
+        vertical-align: middle;
+    }
+    .row_img {
+        padding: 20px 20px 20px 0;
+        width: 80px;
+        border-bottom: 0;
+        position: relative;
+        z-index: 9;
+        font-size: 0;
+        line-height: 0;
+        img {
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .row_name {
+        width: 330px;
+        line-height: 18px;
+        text-align: left;
+        position: relative;
+        padding-top: 17px;
+        color: #323232;
+        font-size: 12px;
+        P {
+            display: block;
+            width: 100%;
+            height: 36px;
+            overflow: hidden;
+            margin-top: 27px;
+        }
+    }
+    .row3 {
+        width: 130px;
+        padding-top: 40px;
+        // text-align: left;
+    }
+    .fn-count-tip {
+        width: 130px;
+        padding-top: 32px;
+
+        span {
+            display: block;
+            border: 1px solid #dcdcdc;
+            height: 28px;
+            width: 94px;
+            line-height: 28px;
+            font-size: 14px;
+            margin: 5px 15px 5px 0;
+            overflow: hidden;
+            a {
+                display: block;
+                float: left;
+                height: 28px;
+                width: 28px;
+                background-color: #f4f4f4;
+            }
+            input {
+                width: 36px;
+                height: 28px;
+                line-height: 28px\9;
+                float: left;
+                padding: 0;
+                text-align: center;
+                border: 1px solid #dcdcdc;
+                border-width: 0 1px;
+                background-color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+    .row4 {
+        padding-top: 32px;
+        width: 130px;
+        color: #323232;
+        span {
+            display: block;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            margin: 5px 15px 5px 0;
+        }
+    }
+    .row5 {
+        padding-top: 32px;
+        width: 130px;
+        color: #323232;
+        a{
+            display: block;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            margin: 5px 20px 5px 0;
+            color:  #323232;
+        }
+    }
+}
+.shopping_total {
+    width: 960px;
+    height: 72px;
+    z-index: 10;
+    margin: 20px auto;
+    padding: 0 62px;
+    background: url(../img/shopping_total.png) 0 center no-repeat;
+    position: relative;
+    .shopping_total_right {
+        float: right;
+        margin: 25px 0 0;
+        width: 530px;
+        position: relative;
+        .subtotal {
+            padding-right: 30px;
+            line-height: 24px;
+            float: right;
+            .cartsum {
+                width: 114px;
+                text-align: right;
+                padding: 0 8px 0 0;
+            }
+            .price {
+                font-size: 18px;
+                color: #ff2832;
+            }
+        }
+    }
+    .shopping_total_left {
+        float: left;
+        line-height: 58px;
+        width: 430px;
+        position: relative;
+        font-size: 12px;
+        a {
+            margin-left: 28px;
+        }
+        span {
+            margin-left: 80px;
+            i {
+                color: red;
+            }
+        }
+    }
+}
